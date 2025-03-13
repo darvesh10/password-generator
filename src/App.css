@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.password-manager {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 300px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Input and Buttons */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.password-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.copy-btn, .generate-btn, .save-btn, .delete-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.copy-btn:hover, .generate-btn:hover, .save-btn:hover, .delete-btn:hover {
+  transform: scale(1.05);
+  background: #e68900;
+}
+
+/* Delete Button Specific Styling */
+.delete-btn {
+  background: #ff3b3b;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+
+/* Options Styling */
+.options {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.options label {
+  display: block;
+  cursor: pointer;
+}
+
+/* Saved Passwords */
+.saved-passwords {
+  list-style: none;
+  padding: 0;
+}
+
+.password-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
