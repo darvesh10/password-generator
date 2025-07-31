@@ -38,7 +38,7 @@ const PasswordManager = () => {
     if (password && !savedPasswords.includes(password)) {
       const updatedPasswords = [...savedPasswords, password];
       setSavedPasswords(updatedPasswords);
-      localStorage.setItem("passwords", JSON.stringify(updatedPasswords));
+      localStorage.setItem("passwords", JSON.stringify(updatedPasswords)); // for mainataing result await...
     }
   }, [password, savedPasswords]);
 
